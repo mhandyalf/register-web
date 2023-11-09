@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="company">Company to Apply</label>
+        <select id="company" name="company">
+          <option value="">Select Company</option>
+          <option value="Brewed Delight">Brewed Delight</option>
+          <option value="Noah's Coffee">Noah's Coffee</option>
+          <option value="Royal Coffee">Royal Coffee</option>
+          <option value="Cup of Magic">Cup of Magic</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="position">Position to Apply</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="position" value="Backend Developer"> Backend Developer</label>
+          <label><input type="checkbox" name="position" value="Frontend Developer"> Frontend Developer</label>
+          <label><input type="checkbox" name="position" value="Quality Assurance"> Quality Assurance</label>
+          <label><input type="checkbox" name="position" value="Devops"> Devops</label>
+          <label><input type="checkbox" id="check-all" name="position" value="Check All"> Check All</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" />
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <div class="phone-input">
+          <span>+62</span>
+          <input type="text" id="phoneNumber" name="phoneNumber" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+      </div>
+      <button type="button" id="submit-button">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
